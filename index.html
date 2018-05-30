@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bamazon</title>
+</head>
+<body>
+	<h1>Bamazon Workflow</h1>
+
+	<p>On the left, you can see that our folder structure consists of the 'bamazonSchema.sql' file containing the instructions to set up the database and tables, and the 'bamazonCustomer.js' file that will perform actions on the database. On the right, mysql console is awaiting instructions to send to the server.</p>
+	<img src="./Assets/Images/bamazonWorkflow_1.png" width="100%" height="auto" style="float:left; margin-top:10px; margin-bottom:30px">
+
+	<p>On the left is the open 'bamazonSchema.sql' file, which contains the instructions that we will insert into the mysql console on the right. One option is to type or copy/paste each line from the schema into the console. Another option is to source the 'bamazonSchema.sql' file into the database by typing "source /location/of/schema.sql" into the console.</p>
+	<img src="./Assets/Images/bamazonWorkflow_2.png" width="100%" height="auto" style="float:left; margin-top:10px; margin-bottom:30px">
+
+	<p>Following the schema on the left, I create the database named 'bamazon_db' using the console on the right.</p>
+	<img src="./Assets/Images/bamazonWorkflow_3.png" width="100%" height="auto" style="float:left; margin-top:10px; margin-bottom:30px">
+
+	<p>Following the schema, I then tell mysql to use 'bamazon_db' for the following commands...</p>
+	<img src="./Assets/Images/bamazonWorkflow_4.png" width="100%" height="auto" style="float:left; margin-top:10px; margin-bottom:30px">
+
+	<p>...create the table named 'products'</p>
+	<img src="./Assets/Images/bamazonWorkflow_5.png" width="100%" height="auto" style="float:left; margin-top:10px; margin-bottom:30px">
+
+	<p>...and fill the table with product data.</p>
+	<img src="./Assets/Images/bamazonWorkflow_6.png" width="100%" height="auto" style="float:left; margin-top:10px; margin-bottom:30px">
+
+	<p>On the bottom right of the mysql console, we can see the products table has been successfully created.</p>
+	<img src="./Assets/Images/bamazonWorkflow_7.png" width="100%" height="auto" style="float:left; margin-top:10px; margin-bottom:30px">
+
+	<p>On the left, we are using nodejs to run 'bamazonCustomer.js', which will open the Bamazon storefront.</p>
+	<img src="./Assets/Images/bamazonWorkflow_8.png" width="100%" height="auto" style="float:left; margin-top:10px; margin-bottom:30px">
+
+	<p>Upon running 'bamazonCustomer.js', a greeting message is displayed above a list of the product inventory and details. Below the list of products, a prompt awaits the users input.</p>
+	<img src="./Assets/Images/bamazonWorkflow_9.png" width="100%" height="auto" style="float:left; margin-top:10px; margin-bottom:30px">
+
+	<p>The user can then input the Product ID of the desired item...</p>
+	<img src="./Assets/Images/bamazonWorkflow_10.png" width="100%" height="auto" style="float:left; margin-top:10px; margin-bottom:30px">
+
+	<p>...and the amount of which they would like to buy.</p>
+	<img src="./Assets/Images/bamazonWorkflow_11.png" width="100%" height="auto" style="float:left; margin-top:10px; margin-bottom:30px">
+
+	<p>10 Garden Gnomes should be enough...</p>
+	<img src="./Assets/Images/bamazonWorkflow_12.png" width="100%" height="auto" style="float:left; margin-top:10px; margin-bottom:30px">
+
+	<p>Upon entering the quantity, the console displays the name, quantity, and total cost of the completed purchase. The user will then be returned to the storefront, with an updated product inventory</p>
+	<img src="./Assets/Images/bamazonWorkflow_13.png" width="100%" height="auto" style="float:left; margin-top:10px; margin-bottom:30px">
+
+	<p>If the user attempts to purchase more products than we have in stock...</p>
+	<img src="./Assets/Images/bamazonWorkflow_14.png" width="100%" height="auto" style="float:left; margin-top:10px; margin-bottom:30px">
+
+	<p>...they will be informed and prompted for another product.</p>
+	<img src="./Assets/Images/bamazonWorkflow_15.png" width="100%" height="auto" style="float:left; margin-top:10px; margin-bottom:30px">
+
+	<p>As long as that item is in stock, the order will be fullfilled.</p>
+	<img src="./Assets/Images/bamazonWorkflow_16.png" width="100%" height="auto" style="float:left; margin-top:10px; margin-bottom:30px">
+
+	<p>That's all!..for now</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
